@@ -1,9 +1,34 @@
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./App.css";
+import Main from "./LayOUt/Main";
+import Men from "./component/Men/Men";
+import Women from "./component/Women/Women";
+import Unisex from "./component/Unisex/Unisex";
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Main></Main>,
+      children: [
+        {
+          path: "/",
+          element: <Men></Men>,
+        },
+        {
+          path: "/",
+          element: <Women></Women>,
+        },
+        {
+          path: "/",
+          element: <Unisex></Unisex>,
+        },
+      ],
+    },
+  ]);
   return (
     <div className="App">
-      <h1>This is app</h1>
+      <RouterProvider router={router}></RouterProvider>
     </div>
   );
 }
