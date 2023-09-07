@@ -1,0 +1,13 @@
+.common-css {
+  font-size: 16px;
+  font-weight: 500;
+  border-right: 1px solid white;
+}
+.common-css:hover {
+  color: white;
+  border-bottom: 1px solid white;
+}
+.header-second-parent-div {
+  background-color: black;
+  color: white;
+}

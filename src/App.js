@@ -4,6 +4,7 @@ import Main from "./LayOUt/Main";
 import Men from "./component/Men/Men";
 import Women from "./component/Women/Women";
 import Unisex from "./component/Unisex/Unisex";
+import Home from "./component/Home/Home";
 
 function App() {
   const router = createBrowserRouter([
@@ -13,14 +14,22 @@ function App() {
       children: [
         {
           path: "/",
+          element: <Home></Home>,
+        },
+        {
+          path: "/home",
+          element: <Home></Home>,
+        },
+        {
+          path: "/men",
           element: <Men></Men>,
         },
         {
-          path: "/",
+          path: "/women",
           element: <Women></Women>,
         },
         {
-          path: "/",
+          path: "/unisex",
           element: <Unisex></Unisex>,
         },
       ],

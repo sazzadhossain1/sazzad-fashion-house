@@ -1,10 +1,16 @@
 import React from "react";
 import "./Header.css";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <div>
-      <div className="navbar bg-base-100">
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div className="navbar header-second-parent-div">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -46,16 +52,17 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a>Item 1</a>
+              <Link className="common-css" to="/home">
+                Home
+              </Link>
             </li>
             <li tabIndex={0}>
               <details>
-                <summary>Parent</summary>
+                <summary className="common-css">Man</summary>
                 <ul className="p-2">
                   <li>
                     <a>Submenu 1</a>
@@ -66,13 +73,36 @@ const Header = () => {
                 </ul>
               </details>
             </li>
-            <li>
-              <a>Item 3</a>
+            <li tabIndex={0}>
+              <details>
+                <summary className="common-css">Women</summary>
+                <ul className="p-2">
+                  <li>
+                    <a>Submenu 1</a>
+                  </li>
+                  <li>
+                    <a>Submenu 2</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+            <li tabIndex={0}>
+              <details>
+                <summary className="common-css">UniSex</summary>
+                <ul className="p-2">
+                  <li>
+                    <a>Submenu 1</a>
+                  </li>
+                  <li>
+                    <a>Submenu 2</a>
+                  </li>
+                </ul>
+              </details>
             </li>
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Button</a>
+          <Link className=""></Link>
         </div>
       </div>
     </div>
