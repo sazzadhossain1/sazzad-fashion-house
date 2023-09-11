@@ -11,8 +11,8 @@ const Header = () => {
             <div className="img-div">
               <img src="https://www.arfinofficial.com/bangladesh.png" alt="" />
             </div>
-            <p>017XXXXXXXX</p>
-            <p>10Am - 8PM</p>
+            <p className="number">017XXXXXXXX</p>
+            <p className="time">10Am - 8PM</p>
           </div>
           <div>
             <h2 className="Ssyj">SsYJ Fashion House</h2>
