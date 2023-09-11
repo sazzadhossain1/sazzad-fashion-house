@@ -5,10 +5,22 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div>
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
+      <div className="header-grid-color-div">
+        <div className="header-grid-div">
+          <div className="number-flex-div">
+            <div className="img-div">
+              <img src="https://www.arfinofficial.com/bangladesh.png" alt="" />
+            </div>
+            <p>017XXXXXXXX</p>
+            <p>10Am - 8PM</p>
+          </div>
+          <div>
+            <h2 className="Ssyj">SsYJ Fashion House</h2>
+          </div>
+          <div>
+            <Link className="Sign-in">SIGN IN</Link>
+          </div>
+        </div>
       </div>
       <div className="navbar header-second-parent-div">
         <div className="navbar-start">
